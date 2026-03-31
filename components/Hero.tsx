@@ -30,7 +30,7 @@ export default function Hero() {
     <section className='flex flex-col lg:flex-row justify-between items-center py-12 md:py-20 lg:py-24 px-6 md:px-12 lg:px-24 gap-12 lg:gap-0 bg-[#F5F7FA] overflow-hidden'>
         <div className="animate-in fade-in slide-in-from-left duration-1000 ease-in-out">
           <div>
-              <h1 className='text-3xl md:text-5xl lg:text-[56px] text-[#272C47] font-bold max-w-[380px] mb-4 leading-[1.1] animate-in fade-in slide-in-from-bottom duration-1000 delay-300 fill-mode-both'>
+              <h1 className='text-2xl md:text-3xl lg:text-[56px] text-[#272C47] font-bold max-w-[380px] mb-4 leading-[1.1] animate-in fade-in slide-in-from-bottom duration-1000 delay-300 fill-mode-both'>
                 Shop the Best for Your Pets
               </h1>
               <p className="text-[14px] md:text-[18px] text-[#8C95A3] font-medium max-w-[450px] mb-6 md:mb-4 leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500 fill-mode-both">
