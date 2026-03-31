@@ -19,7 +19,7 @@ export const dogFoodProducts: Product[] = [
     rating: 4.8,
     reviews: 324,
     price: 54.99,
-    image: "/images/Yora Dog Food.png",
+    image: "/images/Nature's Feast Dry Food.svg",
     badge: "Best Seller",
     category: "Dog Food",
     description: "Grain-free recipe with high-quality beef and sweet potato for energy and health."
@@ -30,7 +30,7 @@ export const dogFoodProducts: Product[] = [
     rating: 5.0,
     reviews: 128,
     price: 62.50,
-    image: "/images/Product Image.png",
+    image: "/images/Prime Paws Puppy.svg",
     category: "Dog Food",
     description: "Specially formulated for puppies with real chicken protein for active growth."
   },
@@ -40,7 +40,7 @@ export const dogFoodProducts: Product[] = [
     rating: 4.2,
     reviews: 86,
     price: 38.00,
-    image: "/images/Product Image(1).png",
+    image: "/images/Ocean Catch Wet Food.svg",
     category: "Dog Food",
     description: "Premium wet food with wild-caught salmon and brown rice for shiny coats."
   },
@@ -50,7 +50,7 @@ export const dogFoodProducts: Product[] = [
     rating: 4.7,
     reviews: 512,
     price: 14.99,
-    image: "/images/Product Image(5).png",
+    image: "/images/Healthy Bites Treats.svg",
     category: "Dog Food",
     description: "Organic, bite-sized peanut butter treats perfect for training and rewarding."
   },
@@ -60,7 +60,7 @@ export const dogFoodProducts: Product[] = [
     rating: 4.9,
     reviews: 215,
     price: 48.50,
-    image: "/images/Product Image(3).png",
+    image: "/images/Vitality Senior Food.svg",
     badge: "Sale",
     category: "Dog Food",
     description: "Low-calorie formula designed for senior dogs to maintain a healthy weight."
@@ -71,7 +71,7 @@ export const dogFoodProducts: Product[] = [
     rating: 4.6,
     reviews: 189,
     price: 22.00,
-    image: "/images/Product Image(4).png",
+    image: "/images/Natural Dental Chews.svg",
     category: "Dog Food",
     description: "Natural chews that help reduce plaque and freshen your dog's breath."
   },
@@ -82,7 +82,7 @@ export const accessoryProducts: Product[] = [
     title: "Classic Leather Collar",
     category: "Collars & Leashes",
     price: 24.00,
-    image: "/images/Product Image(6).png",
+    image: "/images/Classic Leather Collar.svg",
     badge: "Best Seller",
     label: "Luxury Pet",
     description: "Handcrafted top-grain leather collar with durable brass hardware."
@@ -91,7 +91,7 @@ export const accessoryProducts: Product[] = [
     title: "Reflective Nylon Leash",
     category: "Collars & Leashes",
     price: 18.50,
-    image: "/images/Product Image(7).png",
+    image: "/images/Reflective Nylon Leash.svg",
     label: "Safety First",
     description: "High-visibility reflective stitching for safe nighttime walks with your dog."
   },
@@ -99,7 +99,7 @@ export const accessoryProducts: Product[] = [
     title: "Orthopedic Dog Bed",
     category: "Beds & Bowls",
     price: 89.00,
-    image: "/images/Product Image(8).png",
+    image: "/images/Orthopedic Dog Bed.svg",
     label: "Comfort Zone",
     description: "Memory foam bed designed to support joints and provide ultimate comfort."
   },
@@ -107,7 +107,7 @@ export const accessoryProducts: Product[] = [
     title: "Interactive Puzzle Toy",
     category: "Toys",
     price: 22.00,
-    image: "/images/Product Image(9).png",
+    image: "/images/Interactive Puzzle Toy.svg",
     badge: "New",
     label: "Brain Games",
     description: "Challenging puzzle toy to stimulate your pet's mind and reward play."
@@ -116,7 +116,7 @@ export const accessoryProducts: Product[] = [
     title: "Stainless Steel Bowl Set",
     category: "Beds & Bowls",
     price: 35.00,
-    image: "/images/Product Image(10).png",
+    image: "/images/Stainless Steel Bowl Set.svg",
     label: "Dine Well",
     description: "Non-slip, double-walled stainless steel bowls for clean and easy feeding."
   },
@@ -124,7 +124,7 @@ export const accessoryProducts: Product[] = [
     title: "Adventure Harness",
     category: "Collars & Leashes",
     price: 45.00,
-    image: "/images/Product Image.png",
+    image: "/images/Waterproof Adventure Harness.svg",
     label: "Active Pet",
     description: "No-pull harness with padded breathability for hiking and long adventures."
   },
@@ -132,7 +132,7 @@ export const accessoryProducts: Product[] = [
     title: "Plush Squeaky Bone",
     category: "Toys",
     price: 12.00,
-    image: "/images/Product Image(2).png",
+    image: "/images/Plush Squeaky Bone.svg",
     label: "Soft Play",
     description: "Soft plush toy with a built-in squeaker for hours of gentle indoor fun."
   },
@@ -140,7 +140,7 @@ export const accessoryProducts: Product[] = [
     title: "Travel Water Bottle",
     category: "Travel & Grooming",
     price: 15.99,
-    image: "/images/Product Image(1).png",
+    image: "/images/Travel Water Bottle.svg",
     label: "On the Go",
     description: "Portable, leak-proof water dispenser with an integrated drinking bowl."
   },
@@ -148,7 +148,7 @@ export const accessoryProducts: Product[] = [
     title: "Grooming Brush Set",
     category: "Travel & Grooming",
     price: 14.50,
-    image: "/images/Product Image(3).png",
+    image: "/images/Grooming Brush Set.svg",
     label: "Grooming Pro",
     description: "Complete brush set for detangling and smoothing all pet fur types."
   },
@@ -156,7 +156,7 @@ export const accessoryProducts: Product[] = [
     title: "Cotton Plaid Bandana",
     category: "Apparel",
     price: 9.99,
-    image: "/images/Product Image(4).png",
+    image: "/images/Cotton Plaid Bandana.svg",
     label: "Fashion Pet",
     description: "Stylish and breathable cotton bandana for a classic pet look."
   },
@@ -164,7 +164,7 @@ export const accessoryProducts: Product[] = [
     title: "Backseat Car Cover",
     category: "Travel & Grooming",
     price: 55.00,
-    image: "/images/Product Image(5).png",
+    image: "/images/Backseat Car Cover.svg",
     badge: "Best Seller",
     label: "Travel Safe",
     description: "Waterproof backseat protector for keeping your car clean during pet trips."
@@ -173,7 +173,7 @@ export const accessoryProducts: Product[] = [
     title: "Poop Bag Dispenser",
     category: "Travel & Grooming",
     price: 8.50,
-    image: "/images/Yora Dog Food.png",
+    image: "/images/Eco Poop Bag Dispenser.svg",
     label: "Clean Up",
     description: "Compact and durable dispenser with a clip for easy leash attachment."
   }
@@ -221,7 +221,7 @@ export const blogs = [
     date: "Sep 21, 2025",
     title: "Grooming 101: Brushing Techniques by Coat Type",
     excerpt: "Whether your dog has short hair, a double coat, or curly locks, using the right brush prevents painful mats and...",
-    image: "/images/Blog Cover(3).png"
+    image: "/images/Blog Cover.png"
   },
   {
     id: 5,
@@ -229,7 +229,7 @@ export const blogs = [
     date: "Aug 15, 2025",
     title: "Summer Safety: Keeping Your Dog Cool in Heatwaves",
     excerpt: "Dogs don't sweat like we do. Discover the signs of heatstroke and practical ways to keep your best friend...",
-    image: "/images/Blog Cover(4).png"
+    image: "/images/Blog Cover(1).png"
   },
   {
     id: 6,
@@ -237,7 +237,7 @@ export const blogs = [
     date: "Jul 30, 2025",
     title: "Why Dental Health is Crucial for Older Dogs",
     excerpt: "Bad breath isn't just unpleasant—it could be a sign of dental disease. Here's how to care for a senior dog's...",
-    image: "/images/Blog Cover(5).png"
+    image: "/images/Blog Cover(2).png"
   },
   {
     id: 7,
@@ -245,7 +245,7 @@ export const blogs = [
     date: "Jul 11, 2025",
     title: "Fun Indoor Games for Rainy Afternoons",
     excerpt: "Stuck inside? Burn off that excess canine energy with these mentally stimulating puzzles and hide-and-seek...",
-    image: "/images/Blog Cover(6).png"
+    image: "/images/Blog Cover.png"
   }
 ];
 
@@ -258,9 +258,9 @@ export const categories = [
 
 export const productDetails = {
   'yora-complete-dry-food': {
-    image: '/images/Yora Dog Food.png',
+    image: "/images/Nature's Feast Dry Food.svg",
     category: 'Dry food',
-    title: 'YORA Complete Dry Food',
+    title: 'NATURE\'S FEAST Complete Dry Food',
     description: 'High-protein recipe for adult dogs with gentle digestion support. Balanced with healthy oats, potato, and seaweed, this recipe provides everything your dog needs for a healthy life.',
     price: 45.00,
     oldPrice: 52.00,
@@ -275,7 +275,7 @@ export const cartItems = [
     title: 'Salmon Recipe Dry Food',
     description: 'Nourishing formula for adult dogs',
     price: 38.00,
-    image: '/images/Yora Dog Food.png',
+    image: "/images/Ocean Catch Wet Food.svg",
     tags: ['4 lb bag', 'Grain free', 'Autoship eligible'],
     quantity: 1,
     arrival: 'Tuesday'
@@ -285,7 +285,7 @@ export const cartItems = [
     title: 'Soft Chew Bone Toy',
     description: 'Lightweight daily play essential',
     price: 16.00,
-    image: '/images/Product Image(4).png',
+    image: "/images/Plush Squeaky Bone.svg",
     tags: ['Sand', 'Medium'],
     quantity: 2,
     inStock: true
@@ -295,7 +295,7 @@ export const cartItems = [
     title: 'Ceramic Feeding Bowl',
     description: 'Easy-clean bowl with non-slip base',
     price: 24.00,
-    image: '/images/Product Image(10).png',
+    image: "/images/Stainless Steel Bowl Set.svg",
     tags: ['Cream', 'One size'],
     quantity: 1,
     giftReady: true

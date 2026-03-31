@@ -30,6 +30,16 @@ const products = [
 export default function ProductShowcase() {
   const [activeCategory, setActiveCategory] = useState('all')
 
+  const filteredProducts = activeCategory === 'all' 
+    ? products 
+    : products.filter(p => {
+        if (activeCategory === 'cat') return p.category === 'Cat Food'
+        if (activeCategory === 'dog') return p.category === 'Dog Food'
+        if (activeCategory === 'bird') return p.category === 'Bird Food'
+        if (activeCategory === 'accessories') return p.category === 'Pet Accessories'
+        return true
+      })
+
   return (
     <section className="bg-white py-20 px-2 md:px-24 lg:px-24 rounded-[10px] mx-4 md:mx-12 lg:mx-16 mb-20 ">
       {/* Category Filter Toolbar */}
@@ -51,7 +61,7 @@ export default function ProductShowcase() {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <ShopProductCard 
             key={product.id} 
             title={product.name}

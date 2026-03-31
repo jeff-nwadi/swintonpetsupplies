@@ -1,11 +1,25 @@
 'use client'
 
-import { ShoppingBag, User, Dog, Menu, X} from 'lucide-react'
+import { ShoppingBag, User, Dog, Menu, X, Search } from 'lucide-react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
+  const router = useRouter()
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (searchQuery.trim()) {
+      router.push(`/shop?q=${encodeURIComponent(searchQuery)}`)
+      setIsSearchOpen(false)
+      setSearchQuery('')
+    }
+  }
 
   const navLinks = [
     { name: "Food for dog", href: "/food-for-dog" },
@@ -33,7 +47,30 @@ export default function Header() {
           </nav>
           
           <div className='flex items-center gap-4 md:gap-8 text-[#2E3340] font-medium'>
-              <Link href="/cart" className='flex items-center gap-2 text-[15px]' >
+              <div className="relative h-[24px] flex items-center">
+                {isSearchOpen ? (
+                  <form onSubmit={handleSearch} className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center bg-white border border-gray-200 rounded-full px-3 py-1.5 shadow-sm w-[150px] sm:w-[200px] animate-in slide-in-from-right-2 duration-200">
+                    <Search size={14} className="text-gray-400 mr-2" />
+                    <input 
+                      autoFocus
+                      type="text" 
+                      placeholder="Search..." 
+                      className="w-full text-[13px] outline-none bg-transparent"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      onBlur={() => !searchQuery && setIsSearchOpen(false)}
+                    />
+                    <button type="button" onClick={() => setIsSearchOpen(false)} className="text-gray-400 hover:text-gray-600 ml-1">
+                      <X size={14} />
+                    </button>
+                  </form>
+                ) : (
+                  <button onClick={() => setIsSearchOpen(true)} className="flex items-center text-[15px] hover:text-[#F5B971] transition-colors" aria-label="Search">
+                    <Search />
+                  </button>
+                )}
+              </div>
+              <Link href="/cart" className='flex items-center gap-2 text-[15px] hover:text-[#F5B971] transition-colors' >
                   <ShoppingBag />
                   <span className='hidden md:block'>Cart</span>
               </Link>

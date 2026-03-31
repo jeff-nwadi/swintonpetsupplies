@@ -9,9 +9,9 @@ import RelatedProducts from '@/components/RelatedProducts'
 
 const productData = {
   'yora-complete-dry-food': {
-    image: '/images/Yora Dog Food.png',
+    image: "/images/Nature's Feast Dry Food.svg",
     category: 'Dry food',
-    title: 'YORA Complete Dry Food',
+    title: 'NATURE\'S FEAST Complete Dry Food',
     description: 'High-protein recipe for adult dogs with gentle digestion support. Balanced with healthy oats, potato, and seaweed, this recipe provides everything your dog needs for a healthy life.',
     price: 45.00,
     oldPrice: 52.00,
@@ -20,7 +20,7 @@ const productData = {
   },
   // Default fallback for other slugs
   'default': {
-    image: '/images/Product Image.png',
+    image: "/images/Prime Paws Puppy.svg",
     category: 'Pet Food',
     title: 'Premium Nutrition Mix',
     description: 'A scientifically formulated blend of high-quality proteins and essential vitamins designed to support your pet\'s health and vitality.',

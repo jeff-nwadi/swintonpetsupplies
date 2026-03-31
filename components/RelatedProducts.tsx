@@ -6,35 +6,35 @@ import ShopProductCard from './ShopProductCard'
 
 const relatedProducts = [
   {
-    image: '/images/Yora Dog Food.png',
+    image: "/images/Nature's Feast Dry Food.svg",
     category: 'Dog Food',
     title: 'YORA Complete Dry Food',
     price: 45.00,
     description: "Sustainable insect protein dry food for adult dogs."
   },
   {
-    image: '/images/Product Image(5).png',
+    image: "/images/Healthy Bites Treats.svg",
     category: 'Dog Treats',
     title: 'Chewy Dental Bones',
     price: 18.00,
     description: "Daily rewards that support healthy teeth and gums."
   },
   {
-    image: '/images/Product Image(3).png',
+    image: "/images/Vitality Senior Food.svg",
     category: 'Care',
     title: 'Oatmeal Pet Shampoo',
     price: 22.00,
     description: "Soothing natural formula for sensitive pet skin."
   },
   {
-    image: '/images/Product Image(7).png',
+    image: "/images/Reflective Nylon Leash.svg",
     category: 'Toys',
     title: 'Indestructible Chew Toy',
     price: 15.99,
     description: "Tough rubber chew toy for active and heavy chewers."
   },
   {
-    image: '/images/Product Image(1).png',
+    image: "/images/Ocean Catch Wet Food.svg",
     category: 'Wet Food',
     title: 'Beef & Vegetable Pâté',
     price: 12.50,
