@@ -37,24 +37,24 @@ export default function Newsletter() {
         {/* Right Side: Content & Form */}
         <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl lg:text-[48px] text-[#272C47] font-bold leading-tight">
-              Best online pet product ecommerce service in your area
+            <h2 className="text-2xl md:text-5xl lg:text-[48px] text-[#272C47] font-bold leading-tight">
+              Best pet ecommerce service in your area
             </h2>
-            <p className="text-[16px] text-[#98A0AB] max-w-[500px]">
-              Get update of every new product added in or any kind 
-              of discount offer in our website.
+            <p className="text-[14px] md:text-[16px] text-[#98A0AB] max-w-[500px] mx-auto lg:mx-0">
+              Get updates on every new product or 
+              discount offer on our website.
             </p>
           </div>
 
-          <form className="flex flex-col md:flex-row gap-4 items-center">
+          <form className="flex flex-col md:flex-row gap-3 items-center">
             <input 
               type="email" 
               placeholder="Enter your Email"
-              className="w-full md:flex-1 px-6 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#F5B971] transition-all"
+              className="w-full md:flex-1 px-4 py-3 md:px-6 md:py-4 rounded-[10px] border border-gray-200 outline-none focus:border-[#F5B971] transition-all"
             />
             <button 
               type="submit"
-              className="w-full md:w-auto bg-[#F5B971] text-[#272C47] px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity"
+              className="w-full md:w-auto bg-[#F5B971] text-[#272C47] px-6 py-3 md:px-8 md:py-4 rounded-[10px] font-bold hover:opacity-90 transition-opacity"
             >
               Subscribe Now
             </button>

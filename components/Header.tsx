@@ -8,19 +8,19 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
-    { name: "Food for dog", href: "#" },
-    { name: "Pet accessories", href: "#" },
-    { name: "Shop", href: "#" },
-    { name: "Blogs", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Food for dog", href: "/food-for-dog" },
+    { name: "Pet accessories", href: "/pet-accessories" },
+    { name: "Shop", href: "/shop" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Contact", href: "/contact" },
   ]
 
   return (
     <header className='relative bg-[#F5F7FA] z-50'>
-      <div className='flex justify-between items-center py-6 px-6 md:px-12 lg:px-24'>
+      <div className='flex justify-between items-center py-4 md:py-6 px-6 md:px-12 lg:px-24'>
           <Link href="/" className='flex items-center gap-2'>
-              <Dog className='text-[#272C47]' size={30} />
-              <p className='text-[15px] md:text-[20px] text-[#272C47] font-bold'>Swinton Pet Supplies</p>
+              <Dog className='text-[#272C47] md:scale-125' size={24} />
+              <p className='text-[14px] md:text-[20px] text-[#272C47] font-bold'>Swinton Pet Supplies</p>
           </Link>
           
           {/* Desktop Nav */}
@@ -33,11 +33,11 @@ export default function Header() {
           </nav>
           
           <div className='flex items-center gap-4 md:gap-8 text-[#2E3340] font-medium'>
-              <Link href="" className='flex items-center gap-2 text-[15px]' >
+              <Link href="/cart" className='flex items-center gap-2 text-[15px]' >
                   <ShoppingBag />
                   <span className='hidden md:block'>Cart</span>
               </Link>
-              <Link href="" className='hidden md:flex items-center gap-2 text-[15px]' >
+              <Link href="/auth" className='hidden md:flex items-center gap-2 text-[15px]' >
                   <User />
                   Sign in
               </Link>

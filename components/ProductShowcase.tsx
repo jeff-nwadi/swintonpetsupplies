@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { LayoutGrid, Cat, Dog, Bird, Bone, Heart, Plus } from 'lucide-react'
+import { LayoutGrid, Cat, Dog, Bird, Bone } from 'lucide-react'
+import ShopProductCard from './ShopProductCard'
 
 const categories = [
   { id: 'all', name: 'All Products', icon: <LayoutGrid size={20} /> },
@@ -13,14 +14,14 @@ const categories = [
 ]
 
 const products = [
-  { id: 1, name: "Premium Dog Kibble", price: 150, image: "/images/Product Image.png", category: "dog" },
-  { id: 2, name: "Gourmet Cat Feast", price: 150, image: "/images/Product Image(1).png", category: "cat" },
-  { id: 3, name: "Natural Bird Seed", price: 150, image: "/images/Product Image(2).png", category: "bird" },
-  { id: 4, name: "Organic Pet Shampoo", price: 150, image: "/images/Product Image(3).png", category: "accessories" },
-  { id: 5, name: "Comfortable Dog Collar", price: 150, image: "/images/Product Image(4).png", category: "accessories" },
-  { id: 6, name: "Tough Chew Bone", price: 150, image: "/images/Product Image(5).png", category: "accessories" },
-  { id: 7, name: "Wildflower Bird Mix", price: 150, image: "/images/Product Image(6).png", category: "bird" },
-  { id: 8, name: "Interactive Tennis Ball", price: 150, image: "/images/Product Image(7).png", category: "accessories" },
+  { id: 1, name: "Premium Dog Kibble", price: 150, image: "/images/Product Image.png", category: "Dog Food", label: "Swinton Premium", description: "A balanced diet with essential nutrients for active dogs and puppies." },
+  { id: 2, name: "Gourmet Cat Feast", price: 150, image: "/images/Product Image(1).png", category: "Cat Food", label: "Cat’s Choice", description: "Delicious wet food with real fish and taurine for heart and eye health." },
+  { id: 3, name: "Natural Bird Seed", price: 150, image: "/images/Product Image(2).png", category: "Bird Food", label: "Wild Bird", description: "A blend of natural seeds and grains for local and exotic birds." },
+  { id: 4, name: "Organic Pet Shampoo", price: 150, image: "/images/Product Image(3).png", category: "Pet Accessories", label: "Soft Paws", description: "Hypoallergenic shampoo with aloe vera for a clean and shiny coat." },
+  { id: 5, name: "Comfortable Dog Collar", price: 150, image: "/images/Product Image(4).png", category: "Pet Accessories", label: "Durable Gear", description: "Adjustable and padded collar for long-lasting comfort and safety." },
+  { id: 6, name: "Tough Chew Bone", price: 150, image: "/images/Product Image(5).png", category: "Pet Accessories", label: "Pet Fun", description: "Indestructible chew toy for large and strong-jawed dog breeds." },
+  { id: 7, name: "Wildflower Bird Mix", price: 150, image: "/images/Product Image(6).png", category: "Bird Food", label: "Sky Feast", description: "Nutrient-rich wildflower seeds for songbirds and wild visitors." },
+  { id: 8, name: "Interactive Tennis Ball", price: 150, image: "/images/Product Image(7).png", category: "Pet Accessories", label: "Play Time", description: "Ultra-bounce tennis ball for fetch and interactive pet play." },
 ]
 
 export default function ProductShowcase() {
@@ -46,40 +47,16 @@ export default function ProductShowcase() {
         ))}
       </div>
 
-      {/* Product Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-16 cursor-pointer">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         {products.map((product) => (
-          <div 
+          <ShopProductCard 
             key={product.id} 
-            className="group relative bg-[#F9FAFB] rounded-2xl p-6 border border-transparent hover:border-orange-100 hover:bg-white transition-all duration-500"
-          >
-            {/* Favorite Icon */}
-            <button className="absolute top-4 right-4 text-gray-300 hover:text-red-400 transition-colors">
-              <Heart size={20} />
-            </button>
-
-            {/* Product Image */}
-            <div className="relative h-48 w-full mb-6 flex justify-center items-center overflow-hidden">
-              <Image 
-                src={product.image} 
-                alt={product.name} 
-                width={200} 
-                height={200} 
-                className="object-contain group-hover:scale-110 transition-transform duration-500"
-              />
-            </div>
-
-            {/* Product Info */}
-            <div className="text-center space-y-2">
-              <p className="text-[14px] text-gray-400 font-medium">Product Name</p>
-              <div className="flex justify-between items-center pt-2">
-                <span className="text-[20px] text-[#F5B971] font-bold">${product.price}</span>
-                <button className="bg-white border border-gray-100 p-2 rounded-full text-gray-400 hover:text-[#F5B971] hover:border-[#F5B971] transition-all">
-                  <Plus size={20} />
-                </button>
-              </div>
-            </div>
-          </div>
+            title={product.name}
+            price={product.price}
+            image={product.image}
+            label={product.label}
+            description={product.description}
+          />
         ))}
       </div>
 

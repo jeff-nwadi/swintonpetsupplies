@@ -29,22 +29,16 @@ export default function Features() {
   ]
 
   return (
-    <section className="bg-[#F5F7FA] py-20 lg:py-32 px-6 md:px-12 lg:px-24">
+    <section className="bg-[#F5F7FA] py-12 md:py-20 lg:py-32 px-6 md:px-12 lg:px-24">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
         {/* Left Side: Intro */}
         <div className="lg:w-1/3 space-y-6">
-          <h2 className="text-4xl md:text-5xl lg:text-[48px] text-[#272C47] font-bold leading-[1.1]">
-            What makes us different from others
+          <h2 className="text-3xl md:text-5xl lg:text-[48px] text-[#272C47] font-bold leading-tight">
+            What makes us different
           </h2>
           <div className="space-y-4">
-            <p className="text-[16px] text-[#98A0AB] leading-relaxed">
-              Healthy and Fun Frozen Yogurt Snacks it's playtime meets 
-              snack time when you freeze everybody's favorite health food 
-              into colorful monsters.
-            </p>
-            <p className="text-[16px] text-[#98A0AB] leading-relaxed">
-              Legos the sky's the limit with inexpensive silicone molds and a 
-              little imagination!
+            <p className="text-[14px] md:text-[16px] text-[#98A0AB] leading-relaxed">
+              Healthy and Fun frozen treats that make every snack time special.
             </p>
           </div>
           <button className="px-8 py-3 border border-gray-200 rounded-lg text-[#272C47] font-bold hover:bg-gray-50 transition-colors">
@@ -53,7 +47,7 @@ export default function Features() {
         </div>
 
         {/* Right Side: Features Grid */}
-        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+        <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-16">
           {features.map((feature, index) => (
             <div key={index} className="space-y-4">
               <div className={`${feature.bgColor} w-14 h-14 rounded-full flex items-center justify-center`}>

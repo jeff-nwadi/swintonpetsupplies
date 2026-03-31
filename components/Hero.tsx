@@ -3,16 +3,14 @@ import HeroImage from '../public/images/Yora Dog Food.png'
 import HeroDog from '../public/images/Dog.png'
 export default function Hero() {
   return (
-    <section className='flex flex-col lg:flex-row justify-between items-center py-10 lg:py-18 px-6 md:px-12 lg:px-24 gap-12 lg:gap-0 bg-[#F5F7FA]'>
+    <section className='flex flex-col lg:flex-row justify-between items-center py-12 md:py-20 lg:py-24 px-6 md:px-12 lg:px-24 gap-12 lg:gap-0 bg-[#F5F7FA]'>
         <div>
           <div>
-              <h1 className='text-4xl md:text-5xl lg:text-[56px] text-[#272C47] font-bold max-w-[380px] mb-4 leading-[1.1]'>
-                Buy for your Pet Whatever its Needs
+              <h1 className='text-3xl md:text-5xl lg:text-[56px] text-[#272C47] font-bold max-w-[380px] mb-4 leading-[1.1]'>
+                Shop the Best for Your Pets
               </h1>
-              <p className='text-base lg:text-[18px] text-[#98A0AB] font-medium max-w-[450px] mb-6 md:mb-4 leading-[1.5]'>
-                Let's get real, you don't have to be a Veterinary
-                Nutritionist to know good food. But it's nice to have one
-                on staff.
+              <p className='text-[14px] md:text-[18px] text-[#98A0AB] font-medium max-w-[450px] mb-6 md:mb-4 leading-relaxed'>
+                High-quality nutrition and accessories for your best friends, thoughtsfully picked and vet-approved.
               </p>
 
               <button className='bg-[#F5B971] cursor-pointer text-[#272C47] px-4 py-2 rounded-md text-[15px] font-bold mb-4'>
