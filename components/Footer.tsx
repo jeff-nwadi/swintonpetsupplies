@@ -44,7 +44,7 @@ export default function Footer() {
               <Mail className="text-[#F5B971]" size={20} />
               Email
             </div>
-            <p className="text-[14px] text-[#98A0AB]">
+            <p className="text-[14px] text-[#8C95A3]">
               support@swintonpets.com
             </p>
           </div>
@@ -52,13 +52,18 @@ export default function Footer() {
 
         {/* Bottom Row: Navigation Links */}
         <div className="pt-12 border-t border-gray-100 flex flex-wrap justify-center gap-8 md:gap-16">
-          {["Our Product", "Community", "Get in Touch", "Social Media"].map((link) => (
+          {[
+            { name: "Our Product", href: "/shop" },
+            { name: "Community", href: "/blogs" },
+            { name: "Get in Touch", href: "/contact" },
+            { name: "Privacy Policy", href: "/contact" }
+          ].map((link) => (
             <Link 
-              key={link} 
-              href="#" 
+              key={link.name} 
+              href={link.href} 
               className="text-[14px] text-[#2E3340] font-medium hover:text-[#F5B971] transition-all"
             >
-              {link}
+              {link.name}
             </Link>
           ))}
         </div>

@@ -7,7 +7,7 @@ export default function CheckoutForm() {
     <section className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-8">
       <div className="space-y-1">
         <h3 className="text-xl font-bold text-[#272C47]">Shipping</h3>
-        <p className="text-[14px] text-gray-400 font-medium">Saved address details for a faster checkout.</p>
+        <p className="text-[14px] text-[#8C95A3] font-medium">Saved address details for a faster checkout.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

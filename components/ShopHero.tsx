@@ -26,7 +26,7 @@ export default function ShopHero() {
             Premium Care for Your Best Friend
           </h1>
           
-          <p className="text-[14px] md:text-[16px] text-gray-300 font-medium leading-relaxed max-w-lg mx-auto md:mx-0">
+          <p className="text-[14px] md:text-[16px] text-[#8C95A3] font-medium leading-relaxed max-w-lg mx-auto md:mx-0">
             Discover our curated selection of high-quality food, accessories, and wellness products for very happy pets.
           </p>
           
@@ -40,9 +40,9 @@ export default function ShopHero() {
           </div>
         </div>
         
-        <div className="flex-1 relative w-full aspect-4/3 lg:aspect-auto">
+        <div className="flex-1 relative w-full min-h-[300px] md:min-h-[400px]">
           <Image 
-            src="/images/Shop hero image.svg" 
+            src={ShopHeroImage}
             alt="Pet care products" 
             fill
             className="object-contain"

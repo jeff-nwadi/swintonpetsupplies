@@ -20,7 +20,7 @@ export default function Header() {
       <div className='flex justify-between items-center py-4 md:py-6 px-6 md:px-12 lg:px-24'>
           <Link href="/" className='flex items-center gap-2'>
               <Dog className='text-[#272C47] md:scale-125' size={24} />
-              <p className='text-[14px] md:text-[20px] text-[#272C47] font-bold'>Swinton Pet Supplies</p>
+              <p className="text-[14px] md:text-[20px] text-[#272C47] font-bold">Swinton Pet Supplies</p>
           </Link>
           
           {/* Desktop Nav */}
@@ -69,7 +69,7 @@ export default function Header() {
             ))}
             <hr className='border-gray-100' />
             <Link 
-              href="" 
+              href="/auth" 
               className='flex items-center gap-3 text-[18px] text-[#2E3340] font-medium'
               onClick={() => setIsMenuOpen(false)}
             >

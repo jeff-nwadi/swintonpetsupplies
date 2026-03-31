@@ -28,7 +28,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#F5F7FA] pb-24">
       {/* Top Section: Header & Form */}
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 pt-8 md:pt-12 space-y-12">
+      <div className="max-w-[1440px] mx-auto px-3 md:px-12 lg:px-24 pt-8 md:pt-12 space-y-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           
           {/* Left Column: Details & Image */}
@@ -52,8 +52,8 @@ export default function ContactPage() {
                     {detail.icon}
                   </div>
                   <div className="space-y-1 pt-1">
-                    <h4 className="text-[14px] font-bold text-[#272C47]">{detail.title}</h4>
-                    <p className="text-[14px] md:text-[15px] text-gray-400 font-medium">{detail.info}</p>
+                    <h4 className="text-[12px] font-bold text-[#272C47]">{detail.title}</h4>
+                    <p className="text-[12px] md:text-[15px] text-[#8C95A3] font-medium">{detail.info}</p>
                   </div>
                 </div>
               ))}

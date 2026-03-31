@@ -37,7 +37,7 @@ export default function ShopProductCard({
 
   return (
     <Link href={`/shop/${slug}`} className="block group h-full">
-      <div className={`relative bg-[#F5F7FA] rounded-[10px] border border-transparent transition-all duration-500 hover:bg-white hover:border-orange-50/50 flex flex-col h-full ${isMinimal ? 'p-4' : 'p-3 md:p-6'}`}>
+      <div className={`relative bg-white rounded-[10px] border border-transparent transition-all duration-500 hover:bg-[#F5F7FA] hover:border-orange-50/50 flex flex-col h-full ${isMinimal ? 'p-4' : 'p-3 md:p-6'}`}>
         {/* Badge (Sale, New, Best Seller) */}
         {badge && (
           <span className="absolute top-3 left-3 md:top-4 md:left-4 z-10 bg-white px-2 py-0.5 md:px-3 md:py-1 rounded-[4px] text-[8px] md:text-[10px] font-bold text-[#272C47] shadow-sm uppercase tracking-wider">
@@ -67,7 +67,7 @@ export default function ShopProductCard({
         {/* Product Information */}
         <div className="flex flex-col flex-1 space-y-1 md:space-y-2">
           {/* Brand or Category Label */}
-          <p className="text-[9px] md:text-[12px] text-gray-400 font-bold uppercase tracking-widest leading-none">
+          <p className="text-[9px] md:text-[12px] text-[#8C95A3] font-bold uppercase tracking-widest leading-none">
             {label || 'Product Label'}
           </p>
           
@@ -78,7 +78,7 @@ export default function ShopProductCard({
 
           {/* Description (des) - Hidden on mobile to save space */}
           {!isMinimal && description && (
-            <p className="hidden md:block text-[14px] text-gray-300 font-medium line-clamp-2 leading-relaxed">
+            <p className="hidden md:block text-[14px] text-[#8C95A3] font-medium line-clamp-2 leading-relaxed">
               {description}
             </p>
           )}

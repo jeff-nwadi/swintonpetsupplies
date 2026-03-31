@@ -34,7 +34,7 @@ export default function PaymentOptions() {
     <section className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-8">
       <div className="space-y-1">
         <h3 className="text-xl font-bold text-[#272C47]">Payment</h3>
-        <p className="text-[14px] text-gray-400 font-medium">Choose a secure method for this order.</p>
+        <p className="text-[14px] text-[#8C95A3] font-medium">Choose a secure method for this order.</p>
       </div>
 
       <div className="space-y-4">
@@ -58,7 +58,7 @@ export default function PaymentOptions() {
               </div>
               <div className="space-y-0.5">
                 <p className="text-[15px] font-bold text-[#272C47]">{method.title}</p>
-                <p className="text-[13px] text-gray-300 font-medium">{method.subtitle}</p>
+                <p className="text-[13px] text-[#8C95A3] font-medium">{method.subtitle}</p>
               </div>
             </div>
             <span className="text-[13px] font-bold text-gray-300">{method.info}</span>

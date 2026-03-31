@@ -32,7 +32,7 @@ export default function CartPage() {
               <div className="flex justify-between items-end">
                 <div className="space-y-1">
                   <h3 className="text-xl font-bold text-[#272C47]">Cart items</h3>
-                  <p className="text-[14px] text-gray-400 font-medium">3 thoughtfully selected essentials, ready to ship.</p>
+                  <p className="text-[14px] text-[#8C95A3] font-medium">3 thoughtfully selected essentials, ready to ship.</p>
                 </div>
                 <Link href="/shop" className="text-[14px] font-bold text-[#F5B971] hover:underline">
                   Continue shopping
@@ -56,7 +56,7 @@ export default function CartPage() {
             <section className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-8">
               <div className="space-y-1">
                 <h3 className="text-xl font-bold text-[#272C47]">Review</h3>
-                <p className="text-[14px] text-gray-400 font-medium">Final details before placing your order.</p>
+                <p className="text-[14px] text-[#8C95A3] font-medium">Final details before placing your order.</p>
               </div>
 
               <div className="space-y-4">
@@ -87,7 +87,7 @@ export default function CartPage() {
                       </div>
                       <div className="space-y-0.5">
                         <p className="text-[15px] font-bold text-[#272C47]">{item.title}</p>
-                        <p className="text-[13px] text-gray-300 font-medium">{item.subtitle}</p>
+                        <p className="text-[13px] text-[#8C95A3] font-medium">{item.subtitle}</p>
                       </div>
                     </div>
                     <span className="text-[13px] font-bold text-gray-300">{item.value}</span>

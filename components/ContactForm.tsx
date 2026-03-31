@@ -20,7 +20,7 @@ export default function ContactForm() {
           </svg>
         </div>
         <h3 className="text-xl font-bold text-[#272C47]">Message sent!</h3>
-        <p className="text-[14px] text-gray-400 font-medium">Thank you for reaching out. Our team will get back to you shortly.</p>
+        <p className="text-[14px] text-[#8C95A3] font-medium">Thank you for reaching out. Our team will get back to you shortly.</p>
         <button 
           onClick={() => setStatus('idle')}
           className="text-[14px] font-bold text-[#F5B971] hover:underline"

@@ -9,7 +9,7 @@ export default function FaqSection() {
         <h2 className="text-3xl md:text-5xl font-bold text-[#272C47]">
           Frequently Asked Questions
         </h2>
-        <p className="text-[15px] md:text-lg text-gray-400 font-medium leading-relaxed">
+        <p className="text-[15px] md:text-lg text-[#8C95A3] font-medium leading-relaxed">
           Find quick answers to common questions about our products, shipping, and returns.
         </p>
       </div>
@@ -20,7 +20,7 @@ export default function FaqSection() {
             <h3 className="text-lg font-bold text-[#272C47]">
               {faq.question}
             </h3>
-            <p className="text-[14px] md:text-[15px] text-gray-400 font-medium leading-relaxed">
+            <p className="text-[14px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed">
               {faq.answer}
             </p>
           </div>

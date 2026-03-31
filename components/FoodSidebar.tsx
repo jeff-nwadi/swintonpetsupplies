@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { Check } from 'lucide-react'
+import FilterCheckbox from './ui/FilterCheckbox'
 
 export default function FoodSidebar() {
-  const [filters, setFilters] = useState({
+  const [filters, setFilters] = useState<Record<string, string[]>>({
     categories: ['Dry Food (24)'],
     lifeStage: ['Adult'],
-    specialDiet: [] as string[]
+    specialDiet: []
   })
 
   const sections = [
@@ -30,7 +30,7 @@ export default function FoodSidebar() {
 
   const toggleFilter = (sectionId: string, item: string) => {
     setFilters(prev => {
-      const current = prev[sectionId as keyof typeof prev]
+      const current = prev[sectionId] || []
       const next = current.includes(item) 
         ? current.filter(i => i !== item)
         : [...current, item]
@@ -39,36 +39,21 @@ export default function FoodSidebar() {
   }
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 animate-in fade-in slide-in-from-left duration-700">
       {sections.map(section => (
         <div key={section.id} className="space-y-6">
           <h3 className="text-base font-bold text-[#272C47]">
             {section.title}
           </h3>
-          <div className="space-y-4">
-            {section.items.map(item => {
-              const isSelected = filters[section.id as keyof typeof filters].includes(item)
-              return (
-                <label 
-                  key={item} 
-                  className="flex items-center gap-3 cursor-pointer group"
-                  onClick={() => toggleFilter(section.id, item)}
-                >
-                  <div className={`w-5 h-5 rounded-[4px] border flex items-center justify-center transition-all ${
-                    isSelected 
-                    ? 'bg-[#F5B971] border-[#F5B971]' 
-                    : 'bg-transparent border-gray-100 group-hover:border-gray-200'
-                  }`}>
-                    {isSelected && <Check size={14} className="text-white" />}
-                  </div>
-                  <span className={`text-[14px] font-medium transition-colors ${
-                    isSelected ? 'text-[#272C47]' : 'text-gray-300 group-hover:text-gray-400'
-                  }`}>
-                    {item}
-                  </span>
-                </label>
-              )
-            })}
+          <div className="space-y-1">
+            {section.items.map(item => (
+              <FilterCheckbox 
+                key={item} 
+                label={item}
+                checked={(filters[section.id] || []).includes(item)}
+                onChange={() => toggleFilter(section.id, item)}
+              />
+            ))}
           </div>
         </div>
       ))}

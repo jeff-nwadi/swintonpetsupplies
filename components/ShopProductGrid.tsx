@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight, Filter } from 'lucide-react'
 import ShopProductCard from './ShopProductCard'
+import Pagination from './ui/Pagination'
 import { shopProducts as products } from '@/lib/data'
 
 const filterTabs = ['All products', 'Adult dogs', 'Sensitive stomach', 'Top rated']
@@ -44,30 +45,14 @@ export default function ShopProductGrid() {
       </div>
 
       {/* Main Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 ">
         {products.map((product, idx) => (
           <ShopProductCard key={idx} {...product} />
         ))}
       </div>
 
       {/* Pagination */}
-      <div className="flex items-center justify-center gap-3 pt-12">
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-300 hover:text-[#272C47] transition-all border border-gray-100">
-          <ChevronLeft size={20} />
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-[#272C47] text-white font-bold">
-          1
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-400 font-bold hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-100">
-          2
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-400 font-bold hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-100">
-          3
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-300 hover:text-[#272C47] transition-all border border-gray-100">
-          <ChevronRight size={20} />
-        </button>
-      </div>
+      <Pagination currentPage={1} totalPages={3} />
     </div>
   )
 }

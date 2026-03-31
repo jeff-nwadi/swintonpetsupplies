@@ -41,7 +41,7 @@ export default function CartItem({ item }: CartItemProps) {
             <h3 className="font-bold text-[#272C47] text-lg leading-tight">
               {item.title}
             </h3>
-            <p className="text-[13px] text-gray-300 font-medium">
+            <p className="text-[13px] text-[#8C95A3] font-medium">
               {item.description}
             </p>
           </div>

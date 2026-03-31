@@ -56,7 +56,7 @@ export default function CartSummary() {
       {/* Need Help? */}
       <div className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-6">
         <h3 className="text-xl font-bold text-[#272C47]">Need help?</h3>
-        <p className="text-[14px] text-gray-400 font-medium leading-relaxed">
+        <p className="text-[14px] text-[#8C95A3] font-medium leading-relaxed">
           Our team can assist with delivery questions, sizing, or ingredient guidance before you check out.
         </p>
         <div className="flex items-center gap-3 text-[#272C47] font-bold text-[14px]">

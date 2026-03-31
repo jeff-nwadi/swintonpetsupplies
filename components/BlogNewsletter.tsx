@@ -7,7 +7,7 @@ export default function BlogNewsletter() {
         <h2 className="text-3xl md:text-5xl font-bold text-[#272C47]">
           Join the Fluff & Tuff Pack
         </h2>
-        <p className="text-[15px] md:text-lg text-gray-400 font-medium leading-relaxed">
+        <p className="text-[15px] md:text-lg text-[#8C95A3] font-medium leading-relaxed">
           Get exclusive tips, early access to new products, and weekly stories delivered straight to your inbox.
         </p>
       </div>

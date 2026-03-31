@@ -40,7 +40,7 @@ export default function Newsletter() {
             <h2 className="text-2xl md:text-5xl lg:text-[48px] text-[#272C47] font-bold leading-tight">
               Best pet ecommerce service in your area
             </h2>
-            <p className="text-[14px] md:text-[16px] text-[#98A0AB] max-w-[500px] mx-auto lg:mx-0">
+            <p className="text-[14px] md:text-[16px] text-[#8C95A3] max-w-[500px] mx-auto lg:mx-0">
               Get updates on every new product or 
               discount offer on our website.
             </p>

@@ -2,8 +2,11 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { LayoutGrid, Cat, Dog, Bird, Bone } from 'lucide-react'
+import { LayoutGrid, Cat, Dog, Bird, Bone, } from 'lucide-react'
+import Link from 'next/link'
 import ShopProductCard from './ShopProductCard'
+
+
 
 const categories = [
   { id: 'all', name: 'All Products', icon: <LayoutGrid size={20} /> },
@@ -14,14 +17,14 @@ const categories = [
 ]
 
 const products = [
-  { id: 1, name: "Premium Dog Kibble", price: 150, image: "/images/Product Image.png", category: "Dog Food", label: "Swinton Premium", description: "A balanced diet with essential nutrients for active dogs and puppies." },
-  { id: 2, name: "Gourmet Cat Feast", price: 150, image: "/images/Product Image(1).png", category: "Cat Food", label: "Cat’s Choice", description: "Delicious wet food with real fish and taurine for heart and eye health." },
-  { id: 3, name: "Natural Bird Seed", price: 150, image: "/images/Product Image(2).png", category: "Bird Food", label: "Wild Bird", description: "A blend of natural seeds and grains for local and exotic birds." },
-  { id: 4, name: "Organic Pet Shampoo", price: 150, image: "/images/Product Image(3).png", category: "Pet Accessories", label: "Soft Paws", description: "Hypoallergenic shampoo with aloe vera for a clean and shiny coat." },
-  { id: 5, name: "Comfortable Dog Collar", price: 150, image: "/images/Product Image(4).png", category: "Pet Accessories", label: "Durable Gear", description: "Adjustable and padded collar for long-lasting comfort and safety." },
-  { id: 6, name: "Tough Chew Bone", price: 150, image: "/images/Product Image(5).png", category: "Pet Accessories", label: "Pet Fun", description: "Indestructible chew toy for large and strong-jawed dog breeds." },
-  { id: 7, name: "Wildflower Bird Mix", price: 150, image: "/images/Product Image(6).png", category: "Bird Food", label: "Sky Feast", description: "Nutrient-rich wildflower seeds for songbirds and wild visitors." },
-  { id: 8, name: "Interactive Tennis Ball", price: 150, image: "/images/Product Image(7).png", category: "Pet Accessories", label: "Play Time", description: "Ultra-bounce tennis ball for fetch and interactive pet play." },
+  { id: 1, name: "Premium Dog Kibble", price: 150, image: "/images/Product Image.svg", category: "Dog Food", label: "Swinton Premium", description: "A balanced diet with essential nutrients for active dogs and puppies." },
+  { id: 2, name: "Gourmet Cat Feast", price: 150, image: "/images/Product Image(1).svg", category: "Cat Food", label: "Cat’s Choice", description: "Delicious wet food with real fish and taurine for heart and eye health." },
+  { id: 3, name: "Natural Bird Seed", price: 150, image: "/images/Product Image(2).svg", category: "Bird Food", label: "Wild Bird", description: "A blend of natural seeds and grains for local and exotic birds." },
+  { id: 4, name: "Organic Pet Shampoo", price: 150, image: "/images/Product Image(3).svg", category: "Pet Accessories", label: "Soft Paws", description: "Hypoallergenic shampoo with aloe vera for a clean and shiny coat." },
+  { id: 5, name: "Comfortable Dog Collar", price: 150, image: "/images/Product Image(4).svg", category: "Pet Accessories", label: "Durable Gear", description: "Adjustable and padded collar for long-lasting comfort and safety." },
+  { id: 6, name: "Tough Chew Bone", price: 150, image: "/images/Product Image(5).svg", category: "Pet Accessories", label: "Pet Fun", description: "Indestructible chew toy for large and strong-jawed dog breeds." },
+  { id: 7, name: "Wildflower Bird Mix", price: 150, image: "/images/Product Image(6).svg", category: "Bird Food", label: "Sky Feast", description: "Nutrient-rich wildflower seeds for songbirds and wild visitors." },
+  { id: 8, name: "Interactive Tennis Ball", price: 150, image: "/images/Product Image(7).svg", category: "Pet Accessories", label: "Play Time", description: "Ultra-bounce tennis ball for fetch and interactive pet play." },
 ]
 
 export default function ProductShowcase() {
@@ -62,9 +65,9 @@ export default function ProductShowcase() {
 
       {/* Show More Button */}
       <div className="text-center">
-        <button className="bg-[#F5B971] text-[#272C47] px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity">
+        <Link href="/shop" className="inline-block bg-[#F5B971] text-[#272C47] px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity">
           See More Products
-        </button>
+        </Link>
       </div>
     </section>
   )

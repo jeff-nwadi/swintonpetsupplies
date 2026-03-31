@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import ShopProductCard from './ShopProductCard'
+import Pagination from './ui/Pagination'
 import { dogFoodProducts as products } from '@/lib/data'
 
 export default function FoodProductGrid() {
@@ -9,7 +10,7 @@ export default function FoodProductGrid() {
     <div className="space-y-8">
       {/* Top Bar */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <p className="text-sm text-gray-200 font-bold">
+        <p className="text-sm text-[#8C95A3] font-bold">
           Showing 1-9 of 48 products
         </p>
 
@@ -35,27 +36,7 @@ export default function FoodProductGrid() {
       </div>
 
       {/* Pagination */}
-      <div className="flex items-center justify-center gap-2 pt-12">
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-300 hover:text-[#272C47] transition-all border border-gray-100">
-          <ChevronLeft size={20} />
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-[#F5B971] text-white font-bold">
-          1
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-400 font-bold hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-100">
-          2
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-400 font-bold hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-100">
-          3
-        </button>
-        <span className="px-2 text-gray-300 font-bold">...</span>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-400 font-bold hover:bg-gray-100 transition-colors border border-transparent hover:border-gray-100">
-          8
-        </button>
-        <button className="w-10 h-10 flex items-center justify-center rounded-[10px] bg-white text-gray-300 hover:text-[#272C47] transition-all border border-gray-100">
-          <ChevronRight size={20} />
-        </button>
-      </div>
+      <Pagination currentPage={1} totalPages={3} />
     </div>
   )
 }

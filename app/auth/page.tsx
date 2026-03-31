@@ -33,7 +33,7 @@ export default function AuthPage() {
             <h1 className="text-3xl md:text-4xl font-bold text-[#272C47]">
               {isSignIn ? 'Welcome back' : 'Create an account'}
             </h1>
-            <p className="text-[14px] md:text-[15px] text-gray-400 font-medium leading-relaxed">
+            <p className="text-[14px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed">
               {isSignIn 
                 ? 'Sign in to your account to manage your orders and favorites.' 
                 : 'Join the Swinton family today. Get exclusive tips, early access to new products, and more.'
@@ -131,7 +131,7 @@ export default function AuthPage() {
 
           {/* Toggle Button */}
           <div className="text-center pt-2">
-            <p className="text-[14px] text-gray-400 font-medium">
+            <p className="text-[14px] text-[#8C95A3] font-medium">
               {isSignIn ? "Don't have an account?" : "Already have an account?"}
               <button 
                 onClick={() => setMode(isSignIn ? 'signup' : 'signin')}

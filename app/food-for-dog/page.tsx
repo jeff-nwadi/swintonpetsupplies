@@ -2,18 +2,18 @@
 
 import FoodSidebar from '@/components/FoodSidebar'
 import FoodProductGrid from '@/components/FoodProductGrid'
+import PageHeader from '@/components/ui/PageHeader'
 
 export default function FoodForDogPage() {
   return (
     <main className="min-h-screen bg-[#F5F7FA] pb-24">
-      {/* Page Header */}
-      <div className="pt-16 pb-12 px-6 md:px-12 lg:px-24 max-w-[1440px] mx-auto space-y-3 md:pt-4">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#272C47]">
-          Dog Food
-        </h1>
-        <p className="text-[15px] md:text-lg text-gray-300 font-medium leading-relaxed max-w-2xl">
-          Healthy and Fun Frozen Yogurt Snacks it's playtime meets snack time when you freeze everybody's favorite health food.
-        </p>
+      {/* Page Header Area */}
+      <div className="pt-8 px-6 md:px-12 lg:px-24 max-w-[1440px] mx-auto">
+        <PageHeader 
+          title="Dog Food" 
+          description="Healthy and Fun Frozen Yogurt Snacks it's playtime meets snack time when you freeze everybody's favorite health food."
+          breadcrumbs={[{ label: 'Shop', href: '/shop' }, { label: 'Dog Food' }]}
+        />
       </div>
 
       {/* Main Content Area */}

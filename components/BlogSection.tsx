@@ -15,7 +15,7 @@ export default function BlogSection() {
           <h2 className="text-3xl md:text-5xl font-bold text-[#272C47] leading-tight">
             Our News & Articles
           </h2>
-          <p className="text-[15px] md:text-lg text-gray-400 font-medium max-w-xl">
+          <p className="text-[15px] md:text-lg text-[#8C95A3] font-medium max-w-xl">
             Stay updated with the latest pet care tips, product reviews, and heartwarming stories from the Swinton community.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function BlogSection() {
               <h3 className="text-[20px] lg:text-[22px] text-[#272C47] font-bold leading-tight group-hover:text-[#F5B971] transition-colors">
                 {blog.title}
               </h3>
-              <p className="text-[14px] text-[#98A0AB] leading-relaxed line-clamp-2">
+              <p className="text-[14px] text-[#8C95A3] leading-relaxed line-clamp-2">
                 {blog.excerpt}
               </p>
             </div>

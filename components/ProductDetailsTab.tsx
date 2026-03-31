@@ -16,7 +16,7 @@ export default function ProductDetailsTab() {
       <div className="space-y-12 py-8">
         <div className="space-y-6">
           <h2 className="text-xl font-bold text-[#272C47]">Nutritional and Delicious</h2>
-          <p className="text-[15px] text-gray-300 font-medium leading-relaxed max-w-3xl">
+          <p className="text-[15px] text-[#8C95A3] font-medium leading-relaxed max-w-3xl">
             Our premium dry dog food is crafted with care to ensure your pet gets the best possible nutrition. We believe that a healthy dog is a happy dog, which is why we only use high-quality, recognizable ingredients. No artificial fillers, preservatives, or colors to ensure natural health and vitality.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function ProductDetailsTab() {
 
         <div className="space-y-6">
           <h2 className="text-xl font-bold text-[#272C47]">Feeding Guide</h2>
-          <p className="text-[15px] text-gray-300 font-medium leading-relaxed max-w-3xl">
+          <p className="text-[15px] text-[#8C95A3] font-medium leading-relaxed max-w-3xl">
             Give your furry friend the meal they deserve. Our kibble is designed to be crunchy and delicious, helping to maintain dental health while providing a satisfying crunch that dogs love. Adjust daily portions based on your dog's activity level and weight.
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function ProductDetailsTab() {
     ingredients: (
       <div className="py-8 space-y-6">
         <h2 className="text-xl font-bold text-[#272C47]">Ingredients List</h2>
-        <p className="text-[15px] text-gray-400 leading-relaxed font-medium">
+        <p className="text-[15px] text-[#8C95A3] leading-relaxed font-medium">
           Insect Meal (40%), Oats (25%), Potato (15%), Vegetable Oil, Seaweed (5%), Minerals, Vitamins, Natural Antioxidants, Yucca Extract.
         </p>
       </div>
@@ -71,7 +71,7 @@ export default function ProductDetailsTab() {
                 ))}
               </div>
               <p className="font-bold text-[#272C47] mb-2 text-base">My dog loves it!</p>
-              <p className="text-[14px] text-gray-400 font-medium italic leading-relaxed">
+              <p className="text-[14px] text-[#8C95A3] font-medium italic leading-relaxed">
                 &quot;I was skeptical about insect protein but my dog has never been happier! His digestion is better and he devours every meal.&quot;
               </p>
             </div>

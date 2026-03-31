@@ -36,7 +36,7 @@ export default function Testimonials() {
           <h2 className="text-[20px] leading-[1.1] lg:text-[36px] text-[#272C47] font-bold">
             Our valuable respected <br /> product buyers
           </h2>
-          <p className="text-[16px] text-[#98A0AB] leading-[1.5]">
+          <p className="text-[16px] text-[#8C95A3] leading-[1.5]">
             It is joy for us that we make our clients satisfied with best service.
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function Testimonials() {
               <h4 className="text-[16px] text-[#272C47] font-bold leading-tight">
                 {buyer.name}
               </h4>
-              <p className="text-[14px] text-[#98A0AB]">
+              <p className="text-[14px] text-[#8C95A3]">
                 {buyer.role}
               </p>
             </div>

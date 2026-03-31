@@ -38,7 +38,7 @@ export default function BlogListCard({ post }: BlogListCardProps) {
           {post.title}
         </h3>
         
-        <p className="text-[14px] md:text-[15px] text-gray-400 font-medium leading-relaxed line-clamp-3">
+        <p className="text-[14px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed line-clamp-3">
           {post.excerpt}
         </p>
 

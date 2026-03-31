@@ -75,7 +75,7 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
             </div>
           </div>
 
-          <p className="text-[15px] text-gray-400 leading-relaxed max-w-xl font-medium">
+          <p className="text-[15px] text-[#8C95A3] leading-relaxed max-w-xl font-medium">
             Let&apos;s get real, you don&apos;t have to be a Veterinary Nutritionist to know good food. Our premium blend provides all the essential nutrients your dog needs to thrive, using ethically sourced ingredients and natural proteins.
           </p>
 
@@ -130,15 +130,15 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
 
           {/* Meta Info */}
           <div className="space-y-3 pt-8 border-t border-gray-100">
-            <p className="text-[13px] text-gray-400 font-medium">
+            <p className="text-[13px] text-[#8C95A3] font-medium">
               <span className="text-[#272C47] font-bold mr-2">SKU:</span>
               YOR-DF-5KG
             </p>
-            <p className="text-[13px] text-gray-400 font-medium">
+            <p className="text-[13px] text-[#8C95A3] font-medium">
               <span className="text-[#272C47] font-bold mr-2">Category:</span>
               Dog Food
             </p>
-            <p className="text-[13px] text-gray-400 font-medium">
+            <p className="text-[13px] text-[#8C95A3] font-medium">
               <span className="text-[#272C47] font-bold mr-2">Tags:</span>
               Premium, Dry Food, Adult Dogs
             </p>

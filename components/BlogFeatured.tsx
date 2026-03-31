@@ -42,7 +42,7 @@ export default function BlogFeatured({ post }: BlogFeaturedProps) {
           {post.title}
         </h2>
         
-        <p className="text-[15px] md:text-lg text-gray-400 font-medium leading-relaxed">
+        <p className="text-[15px] md:text-lg text-[#8C95A3] font-medium leading-relaxed">
           {post.excerpt}
         </p>
 
@@ -58,7 +58,7 @@ export default function BlogFeatured({ post }: BlogFeaturedProps) {
             </div>
             <div>
               <p className="font-bold text-[#272C47]">{post.author.name}</p>
-              <p className="text-[13px] text-gray-300 font-medium">{post.author.role}</p>
+              <p className="text-[13px] text-[#8C95A3] font-medium">{post.author.role}</p>
             </div>
           </div>
         )}
