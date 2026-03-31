@@ -47,7 +47,7 @@ export default function Header() {
           </nav>
           
           <div className='flex items-center gap-4 md:gap-8 text-[#2E3340] font-medium'>
-              <div className="relative h-[24px] flex items-center">
+              <div className="relative h-[24px] items-center hidden md:flex">
                 {isSearchOpen ? (
                   <form onSubmit={handleSearch} className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center bg-white border border-gray-200 rounded-full px-3 py-1.5 shadow-sm w-[150px] sm:w-[200px] animate-in slide-in-from-right-2 duration-200">
                     <Search size={14} className="text-gray-400 mr-2" />
