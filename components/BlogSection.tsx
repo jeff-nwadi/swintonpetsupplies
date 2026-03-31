@@ -36,7 +36,7 @@ export default function BlogSection() {
               
               {/* Floating Read More Button */}
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-                <button className="flex items-center gap-2 bg-white px-6 py-3 rounded-full text-[14px] text-[#272C47] font-bold hover:bg-gray-50 transition-colors">
+                <button className="flex items-center gap-2 bg-white px-4 py-1 rounded-full text-[10px] md:text-[15px] text-[#272C47] font-bold hover:bg-gray-50 transition-colors">
                   <ArrowRightCircle className="text-[#F5B971]" size={20} />
                   Read More
                 </button>
@@ -44,11 +44,11 @@ export default function BlogSection() {
             </div>
 
             {/* Blog Content */}
-            <div className="text-center space-y-3 px-4">
-              <h3 className="text-[20px] lg:text-[22px] text-[#272C47] font-bold leading-tight group-hover:text-[#F5B971] transition-colors">
+            <div className="text-center space-y-3 px-2">
+              <h3 className="text-[12px] md:text-[22px] text-[#272C47] font-bold leading-tight group-hover:text-[#F5B971] transition-colors">
                 {blog.title}
               </h3>
-              <p className="text-[14px] text-[#8C95A3] leading-relaxed line-clamp-2">
+              <p className="text-[12px] md:text-[15px] text-[#8C95A3] leading-relaxed line-clamp-2">
                 {blog.excerpt}
               </p>
             </div>

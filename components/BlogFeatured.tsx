@@ -38,11 +38,11 @@ export default function BlogFeatured({ post }: BlogFeaturedProps) {
           <span className="text-gray-300">{post.date}</span>
         </div>
         
-        <h2 className="text-3xl md:text-4xl font-bold text-[#272C47] leading-tight">
+        <h2 className="text-[12px] md:text-[22px] font-bold text-[#272C47] leading-tight">
           {post.title}
         </h2>
         
-        <p className="text-[15px] md:text-lg text-[#8C95A3] font-medium leading-relaxed">
+        <p className="text-[12px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed">
           {post.excerpt}
         </p>
 

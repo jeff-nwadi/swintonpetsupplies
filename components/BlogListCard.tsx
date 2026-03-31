@@ -34,17 +34,17 @@ export default function BlogListCard({ post }: BlogListCardProps) {
           <span className="text-gray-300">{post.date}</span>
         </div>
         
-        <h3 className="text-[18px] md:text-[22px] font-bold text-[#272C47] leading-tight group-hover:text-[#F5B971] transition-colors">
+        <h3 className="text-[12px] md:text-[22px] font-bold text-[#272C47] leading-tight group-hover:text-[#F5B971] transition-colors">
           {post.title}
         </h3>
         
-        <p className="text-[14px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed line-clamp-3">
+        <p className="text-[12px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed line-clamp-3">
           {post.excerpt}
         </p>
 
         <Link 
           href={`/blogs/${post.title.toLowerCase().replace(/ /g, '-')}`}
-          className="inline-flex items-center gap-2 text-[14px] font-bold text-[#F5B971] hover:text-[#e4a860] transition-colors group/link"
+          className="inline-flex items-center gap-2 text-[12px] md:text-[15px] font-bold text-[#F5B971] hover:text-[#e4a860] transition-colors group/link"
         >
           Read article
           <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
