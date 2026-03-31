@@ -308,6 +308,8 @@ export const defaultAddress = {
   street: '148 Waverly Lane, Apt 4B',
   city: 'Brooklyn',
   postalCode: '11201',
+  phone: '+1 (555) 019-2034',
+  deliveryNote: '',
 };
 
 export const faqs = [

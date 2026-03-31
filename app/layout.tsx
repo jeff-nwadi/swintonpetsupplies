@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { inter } from "./fonts";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,7 +16,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased`}
+      className="h-full antialiased font-inter"
     >
       <body className="min-h-full flex flex-col bg-[#F5F7FA]">
         <Header />
