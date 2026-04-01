@@ -32,7 +32,7 @@ export default function CartPage() {
               <div className="flex justify-between items-end">
                 <div className="space-y-1">
                   <h3 className="text-xl font-bold text-[#272C47]">Cart items</h3>
-                  <p className="text-[14px] text-[#8C95A3] font-medium">3 thoughtfully selected essentials, ready to ship.</p>
+                  <p className="text-[14px] text-[#8C95A3] font-medium w-[60%] ">3 thoughtfully selected essentials, ready to ship.</p>
                 </div>
               </div>
 
