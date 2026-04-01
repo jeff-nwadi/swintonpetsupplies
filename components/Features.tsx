@@ -32,12 +32,12 @@ export default function Features() {
     <section className="bg-[#F5F7FA] py-12 md:py-20 lg:py-32 px-6 md:px-12 lg:px-24">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
         {/* Left Side: Intro */}
-        <div className="lg:w-1/3 space-y-6">
-          <h2 className="text-3xl md:text-5xl lg:text-[48px] text-[#272C47] font-bold leading-tight">
+        <div className="lg:w-1/3 space-y-2">
+          <h2 className="text-xl md:text-2xl lg:text-[40px] text-[#272C47] font-semibold lg:w-full">
             What makes us different
           </h2>
-          <div className="space-y-4">
-            <p className="text-[12px] md:text-[16px] text-[#8C95A3] leading-relaxed">
+          <div className="space-y-1 mb-4">
+            <p className="text-[12px] md:text-[16px] text-[#8C95A3] leading-relaxed w-[70%] md:w-[60%] lg:w-[80%]">
               Healthy and Fun frozen treats that make every snack time special.
             </p>
           </div>

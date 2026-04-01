@@ -17,7 +17,7 @@ export default function FoodForDogPage() {
       </div>
 
       {/* Main Content Area */}
-      <div className="px-3 md:px-12 lg:px-24 max-w-[1440px] mx-auto">
+      <div className="px-3 md:px-12 lg:px-24 max-w-[1440px] mx-auto py-4">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="w-full lg:w-[280px] shrink-0">

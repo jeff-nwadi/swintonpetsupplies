@@ -98,7 +98,7 @@ export default function ShopProductCard({
           {/* Action Footer */}
           <div className="flex justify-between items-center pt-2 md:pt-4 mt-auto">
             <div className="flex items-baseline gap-1 md:gap-2">
-              <span className={`font-bold text-[#F5B971] ${isMinimal ? 'text-base md:text-lg' : 'text-[15px] md:text-xl'}`}>
+              <span className={`font-bold text-[#272C47] ${isMinimal ? 'text-base md:text-lg' : 'text-[15px] md:text-xl'}`}>
                 ${price.toFixed(2)}
               </span>
               {oldPrice && (
@@ -110,9 +110,9 @@ export default function ShopProductCard({
             
             <button 
               onClick={(e) => e.preventDefault()}
-              className="bg-white border border-gray-100 p-1.5 md:p-2.5 rounded-full text-gray-200 hover:text-[#F5B971] hover:border-[#F5B971] hover:shadow-md transition-all"
+              className="bg-white cursor-pointer border-2 p-1.5 md:p-2.5 rounded-full border-[#272C47] hover:text-[#272C47] hover:border-[#272C47] hover:shadow-md transition-all"
             >
-              <Plus size={isMinimal ? 14 : 16} className="md:scale-125" />
+              <Plus size={isMinimal ? 14 : 16} className="md:scale-125 text-[#272C47]" />
             </button>
           </div>
         </div>

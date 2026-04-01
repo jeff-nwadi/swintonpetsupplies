@@ -29,7 +29,7 @@ export default function CartSummary() {
           <input 
             type="text" 
             placeholder="Promo code" 
-            className="flex-1 px-4 py-3 bg-[#F5F7FA] rounded-[10px] text-[14px] font-bold outline-none border-0 placeholder:text-gray-300"
+            className="flex-1 px-4 py-3 bg-[#F5F7FA] text-[#8C95A3] rounded-[10px] text-[14px] font-bold outline-none border-0 placeholder:text-gray-300"
           />
           <button className="px-6 py-3 bg-white border border-gray-100 rounded-[10px] text-[14px] font-bold text-[#272C47] hover:bg-gray-50 transition-colors">
             Apply
@@ -46,7 +46,7 @@ export default function CartSummary() {
             <button className="w-full py-4 bg-[#F5B971] text-[#272C47] rounded-[10px] font-bold hover:opacity-90 transition-opacity">
               Place order
             </button>
-            <button className="w-full py-4 bg-[#F5F7FA] text-gray-300 rounded-[10px] font-bold hover:bg-gray-100 transition-colors">
+            <button className="w-full py-4 bg-[#F5F7FA] text-[#8C95A3] rounded-[10px] font-bold hover:bg-gray-100 transition-colors">
               Save for later
             </button>
           </div>

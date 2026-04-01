@@ -41,14 +41,14 @@ export default function ProductShowcase() {
       })
 
   return (
-    <section className="bg-white py-20 px-2 md:px-24 lg:px-24 rounded-[10px] mx-4 md:mx-12 lg:mx-16 mb-20 ">
+    <section className="bg-white py-20 px-2 md:px-24 lg:px-24 mb-20 ">
       {/* Category Filter Toolbar */}
-      <div className="flex flex-wrap justify-center gap-4 mb-16">
+      <div className="flex overflow-x-auto md:flex-wrap md:justify-center md:overflow-visible gap-4 mb-16 pb-4 md:pb-0 snap-x [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         {categories.map((category) => (
           <button
             key={category.id}
             onClick={() => setActiveCategory(category.id)}
-            className={`flex items-center gap-2 px-6 py-3 cursor-pointer rounded-[10px] border transition-all duration-300 font-medium ${
+            className={`flex items-center gap-2 px-6 py-3 shrink-0 snap-center cursor-pointer rounded-[10px] border transition-all duration-300 font-medium whitespace-nowrap ${
               activeCategory === category.id
                 ? 'bg-[#F5B971] border-[#F5B971] text-[#272C47]'
                 : 'bg-white border-gray-100 text-[#2E3340] hover:border-gray-300'

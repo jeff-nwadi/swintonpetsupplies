@@ -27,14 +27,14 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className='flex flex-col lg:flex-row justify-between items-center py-12 md:py-20 lg:py-24 px-6 md:px-12 lg:px-24 gap-12 lg:gap-0 bg-[#F5F7FA] overflow-hidden'>
+    <section className='flex flex-col md:flex-row justify-between items-center py-12 md:py-20 lg:py-24 px-6 md:px-12 lg:px-24 gap-12 lg:gap-0 bg-[#F5F7FA] overflow-hidden'>
         <div className="animate-in fade-in slide-in-from-left duration-1000 ease-in-out">
           <div>
-              <h1 className='text-2xl md:text-3xl lg:text-[56px] text-[#272C47] font-bold max-w-[200px] md:max-w-[380px] mb-4 leading-[1.1] animate-in fade-in slide-in-from-bottom duration-1000 delay-300 fill-mode-both'>
-                Shop the Best for Your Pets
+              <h1 className='text-2xl md:text-3xl lg:text-[56px]  text-[#272C47] font-semibold mb-4 leading-[1.1] animate-in fade-in slide-in-from-bottom duration-1000 delay-300 fill-mode-both'>
+                Shop the Best <br /> for Your Pets
               </h1>
-              <p className="text-[12px] md:text-[18px] text-[#8C95A3] font-medium max-w-[250px] md:max-w-[450px] mb-6 md:mb-4 leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500 fill-mode-both">
-                High-quality nutrition and accessories for your best friends, thoughtfully picked and vet-approved.
+              <p className="w-[70%] md:w-[60%] text-[13px] md:text-[15px] text-[#8C95A3] font-medium mb-6 md:mb-4 leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500 fill-mode-both">
+                High-quality nutrition and accessories  for your best friends,  thoughtfully picked and vet-approved.
               </p>
 
               <Link href="/shop" className="block">
@@ -43,6 +43,7 @@ export default function Hero() {
                 </button>
               </Link>
           </div>
+          {/* Pet circles — desktop only */}
           <div className='flex items-center gap-4 py-4 md:py-6 animate-in fade-in slide-in-from-bottom duration-1000 delay-900 fill-mode-both'>
              <div className='rounded-full border border-dashed border-[#272C47] w-[100px] h-[100px] md:w-[140px] md:h-[140px] flex items-center justify-center relative overflow-hidden transition-all duration-700 hover:rotate-12 cursor-pointer'>
               <Image 
@@ -77,7 +78,8 @@ export default function Hero() {
           </div>
         </div>
         
-          <div className='rounded-full bg-[#fdfdfdfd] flex justify-center items-center h-[350px] w-[350px] md:h-[450px] md:w-[450px] lg:h-[500px] lg:w-[500px] shrink-0 border border-transparent animate-in fade-in zoom-in duration-1000 delay-500 fill-mode-both'>
+        {/* Hero image — desktop only */}
+          <div className='hidden lg:flex rounded-full bg-[#fdfdfdfd] justify-center items-center h-[500px] w-[500px] shrink-0 border border-transparent animate-in fade-in zoom-in duration-1000 delay-500 fill-mode-both'>
             <Image src={HeroImage} alt="Yora Dog Food" width={500} height={500} className='p-4 object-contain transition-transform duration-500 hover:scale-110' />
           </div>  
 

@@ -2,7 +2,7 @@
 
 import { ShoppingBag, User, Dog, Menu, X, Search } from 'lucide-react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useState } from 'react'
 
 export default function Header() {
@@ -11,6 +11,7 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const router = useRouter()
+  const pathname = usePathname()
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
@@ -38,16 +39,25 @@ export default function Header() {
           </Link>
           
           {/* Desktop Nav */}
-          <nav className='hidden md:block'>
+          <nav className='hidden lg:block'>
               <ul className='flex items-center gap-4 lg:gap-8 text-[15px] text-[#2E3340] font-medium'>
-                  {navLinks.map((link) => (
-                    <Link key={link.name} href={link.href}>{link.name}</Link>
-                  ))}
+                  {navLinks.map((link) => {
+                    const isActive = pathname === link.href || pathname?.startsWith(`${link.href}/`);
+                    return (
+                      <Link 
+                        key={link.name} 
+                        href={link.href}
+                        className={`transition-colors ${isActive ? 'text-[#F5B971] font-bold' : 'hover:text-[#F5B971]'}`}
+                      >
+                        {link.name}
+                      </Link>
+                    )
+                  })}
               </ul>
           </nav>
           
-          <div className='flex items-center gap-4 md:gap-8 text-[#2E3340] font-medium'>
-              <div className="relative h-[24px] items-center hidden md:flex">
+          <div className='flex items-center gap-4 lg:gap-8 text-[#2E3340] font-medium'>
+              <div className="relative h-[24px] items-center hidden lg:flex">
                 {isSearchOpen ? (
                   <form onSubmit={handleSearch} className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center bg-white border border-gray-200 rounded-full px-3 py-1.5 shadow-sm w-[150px] sm:w-[200px] animate-in slide-in-from-right-2 duration-200">
                     <Search size={14} className="text-gray-400 mr-2" />
@@ -72,16 +82,16 @@ export default function Header() {
               </div>
               <Link href="/cart" className='flex items-center gap-2 text-[15px] hover:text-[#F5B971] transition-colors' >
                   <ShoppingBag />
-                  <span className='hidden md:block'>Cart</span>
+                  <span className='hidden lg:block'>Cart</span>
               </Link>
-              <Link href="/auth" className='hidden md:flex items-center gap-2 text-[15px]' >
+              <Link href="/auth" className='hidden lg:flex items-center gap-2 text-[15px]' >
                   <User />
                   Sign in
               </Link>
               
               {/* Mobile Menu Toggle */}
               <button 
-                className='md:hidden p-2 text-[#272C47]'
+                className='lg:hidden p-2 text-[#272C47]'
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Toggle Menu"
               >
@@ -92,18 +102,21 @@ export default function Header() {
 
       {/* Mobile Nav Overlay */}
       {isMenuOpen && (
-        <div className='absolute top-full left-0 w-full bg-white md:hidden border-t border-gray-100 animate-in fade-in slide-in-from-top-4 duration-300'>
+        <div className='absolute top-full left-0 w-full bg-white lg:hidden border-t border-gray-100 animate-in fade-in slide-in-from-top-4 duration-300'>
           <nav className='flex flex-col p-6 gap-6'>
-            {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
-                href={link.href}
-                className='text-[18px] text-[#2E3340] font-medium'
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || pathname?.startsWith(`${link.href}/`);
+              return (
+                <Link 
+                  key={link.name} 
+                  href={link.href}
+                  className={`text-[18px] transition-colors ${isActive ? 'text-[#F5B971] font-bold' : 'text-[#2E3340] font-medium'}`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
+            })}
             <hr className='border-gray-100' />
             <Link 
               href="/auth" 

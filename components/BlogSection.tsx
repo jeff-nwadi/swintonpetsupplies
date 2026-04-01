@@ -12,7 +12,7 @@ export default function BlogSection() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div className="space-y-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#272C47] leading-tight">
+          <h2 className="text-xl md:text-3xl font-semibold text-[#272C47] leading-tight">
             Our News & Articles
           </h2>
           <p className="text-[15px] md:text-lg text-[#8C95A3] font-medium max-w-xl">

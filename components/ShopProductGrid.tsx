@@ -86,7 +86,7 @@ export default function ShopProductGrid() {
               className={`px-8 py-2.5 rounded-[10px] text-[15px] font-bold whitespace-nowrap transition-all ${
                 activeTab === tab 
                 ? 'bg-[#F5B971] text-white' 
-                : 'bg-white text-gray-300 hover:text-[#272C47] hover:bg-gray-100 border border-transparent hover:border-gray-100'
+                : 'bg-white text-[#8C95A3] hover:text-[#272C47] hover:bg-gray-100 border border-transparent hover:border-gray-100'
               }`}
             >
               {tab}
@@ -95,7 +95,7 @@ export default function ShopProductGrid() {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="hidden lg:flex items-center gap-2 text-[15px] text-gray-300 font-medium">
+          <div className="hidden lg:flex items-center gap-2 text-[15px] text-[#8C95A3] font-medium">
             <span>Sort by:</span>
             <select 
               value={sortBy}

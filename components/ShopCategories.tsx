@@ -19,7 +19,7 @@ export default function ShopCategories() {
           </div>
           <div className="flex flex-col">
             <h3 className="font-bold text-[#272C47]">{cat.name}</h3>
-            <span className="text-[13px] text-gray-300 font-medium">{cat.count} products</span>
+            <span className="text-[13px] text-[#8C95A3] font-medium">{cat.count} products</span>
           </div>
         </div>
       ))}

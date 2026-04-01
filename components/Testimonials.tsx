@@ -33,10 +33,10 @@ export default function Testimonials() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
         <div className="space-y-4 max-w-[500px]">
-          <h2 className="text-[20px] leading-[1.1] lg:text-[36px] text-[#272C47] font-bold">
+          <h2 className="text-[18px] leading-[1.1] lg:text-[36px] text-[#272C47] font-semibold">
             Our valuable respected <br /> product buyers
           </h2>
-          <p className="text-[16px] text-[#8C95A3] leading-[1.5]">
+          <p className="text-[16px] text-[#8C95A3] leading-[1.5] w-[70%] md:w-[60%]">
             It is joy for us that we make our clients satisfied with best service.
           </p>
         </div>
