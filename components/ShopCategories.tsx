@@ -17,7 +17,7 @@ export default function ShopCategories() {
 
   return (
     <div className="mb-12 cursor-default">
-      <h2 className="text-lg md:text-xl font-semibold text-[#272C47] mb-4 md:mb-6">
+      <h2 className="text-md md:text-xl font-semibold text-[#272C47] mb-4 md:mb-6">
         Categories
       </h2>
       

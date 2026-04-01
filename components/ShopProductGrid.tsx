@@ -8,18 +8,14 @@ import { useState, useMemo, useEffect } from 'react'
 
 const filterTabs = ['All products', 'Adult dogs', 'Sensitive stomach', 'Top rated']
 
-export default function ShopProductGrid() {
+interface ShopProductGridProps {
+  searchQuery?: string;
+  setSearchQuery?: (val: string) => void;
+}
+
+export default function ShopProductGrid({ searchQuery = '', setSearchQuery }: ShopProductGridProps) {
   const [activeTab, setActiveTab] = useState('All products')
   const [sortBy, setSortBy] = useState('Featured')
-  const [searchQuery, setSearchQuery] = useState('')
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search)
-      const q = params.get('q')
-      if (q) setSearchQuery(q)
-    }
-  }, [])
 
   const filteredProducts = useMemo(() => {
     let result = [...products]
@@ -64,18 +60,6 @@ export default function ShopProductGrid() {
 
   return (
     <div className="space-y-8">
-      {/* Search Input */}
-      <div className="flex items-center bg-white border border-gray-100 rounded-[10px] px-4 py-3 shadow-sm max-w-sm">
-        <Search size={18} className="text-gray-400 mr-2" />
-        <input 
-          type="text" 
-          placeholder="Search items or categories..." 
-          className="w-full text-[15px] outline-none bg-transparent"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-      </div>
-
       {/* Filters & Sort Tool Bar */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 md:pb-0">
@@ -127,7 +111,7 @@ export default function ShopProductGrid() {
           <Search size={48} className="text-gray-200 mb-4" />
           <h3 className="text-xl font-bold text-[#272C47] mb-2">No products found</h3>
           <p className="text-[#8C95A3] mb-6">We couldn't find anything matching "{searchQuery}".</p>
-          <button onClick={() => { setSearchQuery(''); setActiveTab('All products'); }} className="text-[#F5B971] font-bold hover:underline">
+          <button onClick={() => { if(setSearchQuery) setSearchQuery(''); setActiveTab('All products'); }} className="text-[#F5B971] font-bold hover:underline">
             Clear all filters
           </button>
         </div>
