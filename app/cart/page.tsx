@@ -34,9 +34,6 @@ export default function CartPage() {
                   <h3 className="text-xl font-bold text-[#272C47]">Cart items</h3>
                   <p className="text-[14px] text-[#8C95A3] font-medium">3 thoughtfully selected essentials, ready to ship.</p>
                 </div>
-                <Link href="/shop" className="text-[14px] font-bold text-[#F5B971] hover:underline">
-                  Continue shopping
-                </Link>
               </div>
 
               <div className="space-y-6">
