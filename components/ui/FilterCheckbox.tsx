@@ -18,7 +18,7 @@ export default function FilterCheckbox({
   const isRadio = variant === 'radio';
 
   return (
-    <label className="flex items-center justify-between cursor-pointer group py-1.5 mt-2">
+    <label className="flex items-center justify-between cursor-pointer group py-1 mt-1">
       <div className="flex items-center gap-3">
         <div 
           className={`w-5 h-5 flex items-center justify-center transition-colors 

@@ -21,14 +21,14 @@ export default function CartPage() {
         />
       </div>
 
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+      <div className="max-w-[1440px] mx-auto px-0 md:px-12 lg:px-24">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           
           {/* Left Column: Items & Forms */}
           <div className="flex-1 space-y-8">
             
             {/* Cart Items List */}
-            <section className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-8">
+            <section className="bg-white md:rounded-[10px] px-6 py-8 md:p-8 border-0 md:border border-gray-100/50 space-y-8">
               <div className="flex justify-between items-end">
                 <div className="space-y-1">
                   <h3 className="text-xl font-bold text-[#272C47]">Cart items</h3>
@@ -53,7 +53,7 @@ export default function CartPage() {
             <PaymentOptions />
 
             {/* Review Section */}
-            <section className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-8">
+            <section className="bg-white md:rounded-[10px] px-6 py-8 md:p-8 border-0 md:border border-gray-100/50 space-y-8">
               <div className="space-y-1">
                 <h3 className="text-xl font-bold text-[#272C47]">Review</h3>
                 <p className="text-[14px] text-[#8C95A3] font-medium">Final details before placing your order.</p>

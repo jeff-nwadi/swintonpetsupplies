@@ -54,7 +54,7 @@ export default function Features() {
                 {feature.icon}
               </div>
               <div className="space-y-2">
-                <h3 className="text-[20px] text-[#272C47] font-bold">
+                <h3 className="text-[15px] text-[#272C47] font-bold">
                   {feature.title}
                 </h3>
                 <p className="text-[12px] md:text-[15px] text-[#8C95A3] leading-relaxed max-w-[280px]">

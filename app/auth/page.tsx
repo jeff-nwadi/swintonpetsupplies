@@ -14,8 +14,8 @@ export default function AuthPage() {
   const isSignIn = mode === 'signin'
 
   return (
-    <main className="min-h-screen bg-[#F5F7FA] flex items-center justify-center p-6 md:p-12 lg:p-24">
-      <div className="max-w-[1000px] w-full bg-white rounded-[20px] overflow-hidden flex flex-col md:flex-row border border-gray-100/50">
+    <main className="min-h-screen bg-white md:bg-[#F5F7FA] flex items-center justify-center p-0 md:p-12 lg:p-24">
+      <div className="max-w-[1000px] w-full h-screen md:h-auto bg-white rounded-none md:rounded-[10px] overflow-hidden flex flex-col md:flex-row border-0 md:border md:border-gray-100/50">
         
         {/* Left Side: Image Panel */}
         <div className="hidden md:block w-1/2 relative">
@@ -30,7 +30,7 @@ export default function AuthPage() {
         {/* Right Side: Form Content */}
         <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center space-y-8">
           <div className="space-y-3">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#272C47]">
+            <h1 className="text-2xl md:text-3xl font-bold text-[#272C47]">
               {isSignIn ? 'Welcome back' : 'Create an account'}
             </h1>
             <p className="text-[14px] md:text-[15px] text-[#8C95A3] font-medium leading-relaxed">

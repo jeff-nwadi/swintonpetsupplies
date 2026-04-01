@@ -33,7 +33,7 @@ export default function Hero() {
               <h1 className='text-2xl md:text-3xl lg:text-[56px]  text-[#272C47] font-semibold mb-4 leading-[1.1] animate-in fade-in slide-in-from-bottom duration-1000 delay-300 fill-mode-both'>
                 Shop the Best <br /> for Your Pets
               </h1>
-              <p className="w-[70%] md:w-[60%] text-[13px] md:text-[15px] text-[#8C95A3] font-medium mb-6 md:mb-4 leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500 fill-mode-both">
+              <p className="w-[75%] md:w-[60%] text-[13px] md:text-[15px] text-[#8C95A3] font-medium mb-6 md:mb-4 leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500 fill-mode-both">
                 High-quality nutrition and accessories  for your best friends,  thoughtfully picked and vet-approved.
               </p>
 

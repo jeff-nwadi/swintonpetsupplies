@@ -91,7 +91,7 @@ export default function ShopProductCard({
                   <Star key={i} size={12} fill={i < Math.floor(rating) ? 'currentColor' : 'none'} className="stroke-[1.5px]" />
                 ))}
               </div>
-              <span className="text-[11px] text-gray-200 font-bold">({reviews || 0})</span>
+              <span className="text-[11px] text-[#8C95A3] font-bold">({reviews || 0})</span>
             </div>
           )}
 
@@ -102,7 +102,7 @@ export default function ShopProductCard({
                 ${price.toFixed(2)}
               </span>
               {oldPrice && (
-                <span className="text-[10px] md:text-sm text-gray-200 line-through">
+                <span className="text-[10px] md:text-sm text-[#8C95A3] line-through">
                   ${oldPrice.toFixed(2)}
                 </span>
               )}

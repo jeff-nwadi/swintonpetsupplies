@@ -38,12 +38,12 @@ export default function ProductSlugPage() {
   return (
     <main className="min-h-screen bg-[#F5F7FA]">
       {/* Breadcrumbs */}
-      <nav className="pt-8 px-6 md:px-12 lg:px-24 max-w-[1440px] mx-auto flex items-center gap-2 text-[13px] text-gray-200 mb-8" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-gray-400 transition-colors">Home</Link>
-        <ChevronRight size={12} className="text-gray-100" />
-        <Link href="/shop" className="hover:text-gray-400 transition-colors">Shop</Link>
-        <ChevronRight size={12} className="text-gray-100" />
-        <span className="text-gray-300 font-medium">{product.title}</span>
+      <nav className="pt-8 px-6 md:px-12 lg:px-24 max-w-[1440px] mx-auto flex items-center gap-2 text-[13px] text-[#8C95A3] mb-8" aria-label="Breadcrumb">
+        <Link href="/" className="hover:text-gray-800 transition-colors">Home</Link>
+        <ChevronRight size={12} className="text-[#8C95A3]" />
+        <Link href="/shop" className="hover:text-gray-800 transition-colors">Shop</Link>
+        <ChevronRight size={12} className="text-[#8C95A3]" />
+        <span className="text-[#8C95A3] font-medium">{product.title}</span>
       </nav>
 
       {/* Main Content */}

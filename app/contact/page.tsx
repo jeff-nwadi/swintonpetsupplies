@@ -28,12 +28,12 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#F5F7FA] pb-24">
       {/* Top Section: Header & Form */}
-      <div className="max-w-[1440px] mx-auto px-3 md:px-12 lg:px-24 pt-8 md:pt-12 space-y-12">
+      <div className="max-w-[1440px] mx-auto px-0 md:px-12 lg:px-24 pt-8 md:pt-12 space-y-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           
           {/* Left Column: Details & Image */}
           <div className="space-y-12">
-            <div className="space-y-6">
+            <div className="space-y-6 px-3 md:px-0">
               <span className="inline-block px-3 py-1 bg-[#F5B971]/10 text-[#F5B971] text-[12px] font-bold rounded-full uppercase tracking-wider">
                 Support
               </span>
@@ -45,7 +45,7 @@ export default function ContactPage() {
             </div>
 
             {/* Direct Contact Info */}
-            <div className="space-y-8">
+            <div className="space-y-8 px-3 md:px-0">
               {contactDetails.map((detail, idx) => (
                 <div key={idx} className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-white rounded-[10px] flex items-center justify-center border border-gray-100/50 shrink-0">

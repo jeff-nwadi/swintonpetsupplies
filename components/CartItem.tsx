@@ -53,7 +53,7 @@ export default function CartItem({ item }: CartItemProps) {
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {item.tags.map((tag) => (
-            <span key={tag} className="px-3 py-1 bg-white rounded-full text-[11px] font-bold text-gray-300 uppercase tracking-wide border border-gray-100/50">
+            <span key={tag} className="px-3 py-1 bg-white rounded-full text-[11px] font-bold text-[#8C95A3] uppercase tracking-wide border border-gray-100/50">
               {tag}
             </span>
           ))}
@@ -61,7 +61,7 @@ export default function CartItem({ item }: CartItemProps) {
 
         {/* Bottom Actions */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div className="text-[12px] font-medium text-gray-300">
+          <div className="text-[12px] font-medium text-[#8C95A3]">
             {item.arrival && `Arrives by ${item.arrival}`}
             {item.inStock && `In stock`}
             {item.giftReady && `Gift-ready packaging`}
@@ -71,20 +71,20 @@ export default function CartItem({ item }: CartItemProps) {
             <div className="flex items-center gap-3 bg-white px-2 py-1.5 rounded-[8px] border border-gray-100/50">
               <button 
                 onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                className="text-gray-300 hover:text-[#272C47] transition-colors"
+                className="text-[#8C95A3] hover:text-[#272C47] transition-colors"
               >
                 <Minus size={14} strokeWidth={3} />
               </button>
               <span className="text-[14px] font-bold text-[#272C47] min-w-[12px] text-center">{quantity}</span>
               <button 
                 onClick={() => setQuantity(quantity + 1)}
-                className="text-gray-300 hover:text-[#272C47] transition-colors"
+                className="text-[#8C95A3] hover:text-[#272C47] transition-colors"
               >
                 <Plus size={14} strokeWidth={3} />
               </button>
             </div>
             
-            <button className="text-[12px] font-bold text-gray-300 hover:text-red-400 transition-colors">
+            <button className="text-[12px] font-bold text-[#8C95A3] hover:text-red-400 transition-colors">
               Remove
             </button>
           </div>

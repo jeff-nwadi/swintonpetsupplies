@@ -39,13 +39,13 @@ export default function FoodSidebar() {
   }
 
   return (
-    <div className="space-y-12 animate-in fade-in slide-in-from-left duration-700">
+    <div className="space-y-5 animate-in fade-in slide-in-from-left duration-700">
       {sections.map(section => (
-        <div key={section.id} className="space-y-6">
-          <h3 className="text-base font-bold text-[#272C47]">
+        <div key={section.id}>
+          <h3 className="text-[11px] font-bold uppercase tracking-widest text-[#8C95A3] mb-1.5">
             {section.title}
           </h3>
-          <div className="space-y-1">
+          <div>
             {section.items.map(item => (
               <FilterCheckbox 
                 key={item} 

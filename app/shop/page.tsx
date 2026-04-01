@@ -14,8 +14,8 @@ export default function ShopPage() {
         <ShopCategories />
         
         <div className="flex flex-col lg:flex-row gap-8 mt-12">
-          {/* Sidebar */}
-          <aside className="w-full lg:w-[280px] shrink-0">
+          {/* Sidebar — desktop only */}
+          <aside className="hidden lg:block w-full lg:w-[280px] shrink-0">
             <ShopSidebar />
           </aside>
           

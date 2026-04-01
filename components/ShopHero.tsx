@@ -7,7 +7,7 @@ import ShopHeroImage from "@/public/images/Shop hero image.svg"
 
 export default function ShopHero() {
   return (
-    <section className="pt-8 pb-12 px-0 md:px-12 lg:px-24 md:max-w-[1500px] mx-auto">
+    <section className="hidden md:block pt-8 pb-12 px-0 md:px-12 lg:px-24 md:max-w-[1500px] mx-auto">
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-sm text-[#8C95A3] mb-8 px-6 md:px-0" aria-label="Breadcrumb">
         <Link href="/" className="hover:text-gray-800 transition-colors">Home</Link>

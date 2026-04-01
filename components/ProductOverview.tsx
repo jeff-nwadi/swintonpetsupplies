@@ -57,7 +57,7 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
         {/* Right: Product Info */}
         <div className="flex flex-col space-y-8 py-2">
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#272C47] leading-tight max-w-xl">
+            <h1 className="text-xl md:text-2xl font-semibold text-[#272C47] leading-tight max-w-xl">
               {product.title}
             </h1>
             
@@ -67,11 +67,11 @@ export default function ProductOverview({ product }: ProductOverviewProps) {
                   <Star key={i} size={18} fill={i < Math.floor(product.rating) ? 'currentColor' : 'none'} className="stroke-[1.5px]" />
                 ))}
               </div>
-              <span className="text-sm text-gray-300 font-medium">4.8 ({product.reviews} reviews)</span>
+              <span className="text-[12px] text-[#8C95A3] font-medium">4.8 ({product.reviews} reviews)</span>
             </div>
 
             <div className="pt-2">
-              <span className="text-4xl font-bold text-[#F5B971]">${product.price.toFixed(2)}</span>
+              <span className="text-xl font-semibold text-[#F5B971]">${product.price.toFixed(2)}</span>
             </div>
           </div>
 

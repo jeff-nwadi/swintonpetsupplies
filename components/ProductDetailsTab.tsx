@@ -23,14 +23,14 @@ export default function ProductDetailsTab() {
 
         <div className="space-y-6">
           <h2 className="text-xl font-bold text-[#272C47]">Key Benefits</h2>
-          <ul className="space-y-4">
+          <ul className="space-y-4 text-[#8C95A3]">
             {[
               'High in protein for lean muscle maintenance and healthy energy levels.',
               'Rich in Omega-3 and Omega-6 fatty acids for healthy skin and a shiny coat.',
               'Easily digestible formula suitable for sensitive stomachs and improved gut health.',
               'Contains essential vitamins and minerals for overall wellbeing and strong immunity.'
             ].map((benefit, i) => (
-              <li key={i} className="flex items-start gap-3 text-[15px] text-gray-300 font-medium">
+              <li key={i} className="flex items-start gap-3 text-[15px] text-[#8C95A3] font-medium">
                 <span className="text-[#F5B971] text-lg leading-none mt-1">•</span>
                 {benefit}
               </li>
@@ -58,7 +58,7 @@ export default function ProductDetailsTab() {
       <div className="py-8 space-y-8">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold text-[#272C47]">Customer Reviews</h2>
-          <button className="px-6 py-2.5 bg-[#F5B971] text-white rounded-[10px] font-bold text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+          <button className="px-6 py-2.5 bg-[#F5B971] text-white rounded-[10px] font-semibold text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
             Write a Review
           </button>
         </div>
@@ -70,7 +70,7 @@ export default function ProductDetailsTab() {
                   <span key={i} className="text-lg">★</span>
                 ))}
               </div>
-              <p className="font-bold text-[#272C47] mb-2 text-base">My dog loves it!</p>
+              <p className="font-semibold text-[#272C47] mb-2 text-base">My dog loves it!</p>
               <p className="text-[14px] text-[#8C95A3] font-medium italic leading-relaxed">
                 &quot;I was skeptical about insect protein but my dog has never been happier! His digestion is better and he devours every meal.&quot;
               </p>
@@ -88,7 +88,7 @@ export default function ProductDetailsTab() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`pb-4 text-[15px] font-bold transition-all relative ${activeTab === tab.id ? 'text-[#272C47]' : 'text-gray-200 hover:text-gray-400'}`}
+            className={`pb-4 text-[15px] font-semibold transition-all relative ${activeTab === tab.id ? 'text-[#272C47]' : 'text-[#8C95A3] hover:text-[#272C47]'}`}
           >
             {tab.label}
             {activeTab === tab.id && (

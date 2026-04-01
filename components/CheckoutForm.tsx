@@ -4,7 +4,7 @@ import { defaultAddress } from '@/lib/data'
 
 export default function CheckoutForm() {
   return (
-    <section className="bg-white rounded-[10px] p-8 border border-gray-100/50 space-y-8">
+    <section className="bg-white md:rounded-[10px] px-6 py-8 md:p-8 border-0 md:border border-gray-100/50 space-y-8">
       <div className="space-y-1">
         <h3 className="text-xl font-bold text-[#272C47]">Shipping</h3>
         <p className="text-[14px] text-[#8C95A3] font-medium">Saved address details for a faster checkout.</p>
